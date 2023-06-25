@@ -13,8 +13,6 @@ moviesControllers.all = async (req, res) => {
 
             const directorDB = await Director.findOne({ _id: movie.directorId })
 
-            console.log(directorDB)
-
             return {
                 id: movie.id,
                 title: movie.title,
